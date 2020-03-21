@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input_form.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" action="#">
+    <div class="login-box">
+        <h1>Login</h1>
+    <div class="textbox">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input id="username" type="text" placeholder="Username" value="" >
+        <span id="text1" class="txt"></span>
+    </div>
+    <div class="textbox" id="textbox1">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <div class="inputbox">
+        <input type="email" placeholder="Email" value="" id="email" >
+        <span id="text" class="txt" ></span>
+        </div>
+    </div>
+    <div class="textbox">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+    <input type="password" id="password" placeholder="Password" value="" >
+    <span id="text2" onclick="showHide();"></span>
+    <span id="text3" class="txt"></span>
+    </div>
+   
+    <input class="btn" type="button" value="Login" onclick="formChecker(event);">
+    </div>
+    </form>
+
+    <script src="input_form.js"></script>
+</body>
+</html>
